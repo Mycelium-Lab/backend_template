@@ -11,7 +11,7 @@ DB_NAME = "postgres"
 
 if TESTING:
     # Use separate DB for tests
-    DB_NAME = "postgres"
+    DB_NAME = "postgres-tests"
     TEST_SQLALCHEMY_DATABASE_URL = (
         f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:5432/{DB_NAME}"
     )
